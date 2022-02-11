@@ -104,7 +104,7 @@
     }
 
     .see-more {
-        font-size: 40px;
+        font-size: 32px;
         top:  -0.8em;
     }
 
@@ -360,7 +360,6 @@ section img:hover {
     top: 0;
     left: 0;
     padding: 10%;
-    font-size: 22px;
     transform: scaleY(0);
     -webkit-transform: scaleY(0);
     transform-origin: 50% 50%;

@@ -62,7 +62,7 @@
 	}
 
     #header {   
-        background-image: url('img/baner-mobile.gif');
+        background-image: url('img/baner-mobile.jpg');
     }
 
     #strony, #grafiki, #fotografie {
@@ -100,7 +100,7 @@
     }
 
     .img-info p {
-        font-size: 40px;
+        font-size: 48px;
     }
 
     .see-more {
@@ -178,7 +178,7 @@
     }
 
     #header {   
-        background-image: url('img/baner.gif');
+        background-image: url('img/baner.jpg');
     }
 
     footer {
@@ -375,16 +375,24 @@ section img:hover {
     background: rgba(58, 58, 58, 0.8);
 }
 
-#obrazek {
-    background-image: url('img/obrazek.png');
+#wizytowki {
+    background-image: url('img/wizytowki.gif');
+}
+
+#dlafirm {
+    background-image: url('img/dlafirm.gif');
+}
+
+#responsywne {
+    background-image: url('img/responsywne.gif');
 }
 
 #loga {
-    background-image: url('img/obrazek.png');
+    background-image: url('img/loga.png');
 }
 
 #mailing {
-    background-image: url('img/obrazek.png');
+    background-image: url('img/mailing.png');
 }
 
 #reklamy {
@@ -412,6 +420,7 @@ section img:hover {
 
 table {
 	margin: auto;
+    padding: 0 0 2% 0;
     font-family: 'Quicksand', sans-serif;
 }
 

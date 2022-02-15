@@ -79,11 +79,43 @@
 			</li>
 		</ol>
     </nav>
-    <section id="header">
+    <section id="header-gallery">
     </section>
     <section id="omnie">
         <h2>Strona w budowie...</h2>
         <article>anitaplichta7@wp.pl</article>
+    </section>
+	<section id="omnie">
+        <h2>Zdjęcia produktowe</h2>
+		<div id="slideshow">
+			<div class="left">
+				<img src="icon/left.png" onclick="left()">
+			</div>
+			<img id="slide" src="img/fotografie/produktowe/1.jpg">
+			<div class="right">
+				<img src="icon/right.png" onclick="right()">
+			</div>
+		</div>
+			<div class="show-box">
+				<a href="fotografie.html#slideshow">
+					<img class="show" src="img/fotografie/produktowe/1.jpg" onclick="slideshow(1)">
+				</a>
+				<a href="fotografie.html#slideshow">
+					<img class="show" src="img/fotografie/produktowe/2.jpg" onclick="slideshow(2)">
+				</a>
+				<a href="fotografie.html#slideshow">
+					<img class="show" src="img/fotografie/produktowe/3.jpg" onclick="slideshow(3)">
+				</a>
+				<a href="fotografie.html#slideshow">
+					<img class="show" src="img/fotografie/produktowe/4.jpg" onclick="slideshow(4)">
+				</a>
+				<a href="fotografie.html#slideshow">
+					<img class="show" src="img/fotografie/produktowe/5.jpg" onclick="slideshow(5)">
+				</a>
+				<a href="fotografie.html#slideshow">
+					<img class="show" src="img/fotografie/produktowe/6.jpg" onclick="slideshow(6)">
+				</a>
+			</div>
     </section>
     <section id="kontakt">
         <h2>Kontakt</h2>
@@ -117,7 +149,7 @@
     <footer>
         &copy 2022 Projekt i realizacja Anita Plichta
     </footer>
-    <script>
+    <script type="text/javascript">
 		function on() {
 			document.getElementById('menu').style="visibility: visible;transform: scaleY(1);-webkit-transform: scaleY(1)";
 			document.getElementById('on').style="display: none";
@@ -131,6 +163,35 @@
                 document.getElementById('on').style="display: block";
                 document.getElementById('off').style="display: none";
             }
+		}
+		
+		i=1;
+		function right() {
+            if(window.innerWidth > 999)
+            {
+				if(i<6)
+				{
+					i++;
+				}else
+				i=1;
+				document.getElementById('slide').src='img/fotografie/produktowe/'+i+'.jpg';
+            }
+		}
+
+		function left() {
+            if(window.innerWidth > 999)
+            {
+				if(i>1)
+				{
+					i--;
+				}else
+				i=6;
+				document.getElementById('slide').src='img/fotografie/produktowe/'+i+'.jpg';
+            }
+		}
+
+		function slideshow(n) {
+			document.getElementById('slide').src='img/fotografie/produktowe/'+n+'.jpg';
 		}
 	</script>
 </body>

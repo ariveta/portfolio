@@ -69,6 +69,21 @@
         margin-bottom: 10%;
     }
 
+    h1 {
+        text-align: center;
+        padding: 2% 0 2% 0;
+    }
+
+    @-webkit-keyframes width {
+        0%   {top: 0em; background: rgba(0, 0, 122, 0.5); width: 5%;}
+        100% {top: 7em; background: rgba(255, 255, 255, 0.5); width: 100%;}
+    }
+    
+    @keyframes width {
+        0%   {top: 0em; background: rgba(0, 0, 122, 0.5); width: 5%;}
+        100% {top: 7em; background: rgb(255, 255, 255, 0.5); width: 100%;}
+    }
+
     footer {
         padding: 3% 0.5% 0.5% 0.5%;
         font-size: 12px;
@@ -246,6 +261,20 @@
         background-image: url('img/baner.jpg');
     }
 
+    h1 {
+        padding: 2% 0 2% 10%;
+    }
+
+    @-webkit-keyframes width {
+        0%   {top: 0em; background: rgba(0, 0, 122, 0.5); width: 5%;}
+        100% {top: 6em; background: rgba(255, 255, 255, 0.5); width: 100%;}
+    }
+    
+    @keyframes width {
+        0%   {top: 0em; background: rgba(0, 0, 122, 0.5); width: 5%;}
+        100% {top: 6em; background: rgb(255, 255, 255, 0.5); width: 100%;}
+    }
+
     footer {
         padding: 1% 0.5% 0.5% 0.5%;
     }
@@ -282,7 +311,7 @@
 
     .see-more {
         font-size: 22px;
-        top:  -1.5em;
+        top: -1.5em;
     }
 
     table {
@@ -431,6 +460,21 @@ section:not(:last-child) {
     height: 50vh;
     background-size: cover;
 	background-position: center center;
+}
+
+h1 {
+    position: relative;
+    font-size: 48px;
+    font-family: 'Syncopate', sans-serif;
+    color: rgb(0, 0, 0);
+    background: rgba(0, 0, 122, 0.5);
+    -webkit-animation: width 5s;
+    animation: width 5s;
+    animation-fill-mode: forwards;
+}
+
+.none {
+    opacity: 0;
 }
 
 #kontakt {

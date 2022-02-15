@@ -75,13 +75,13 @@
     }
 
     @-webkit-keyframes width {
-        0%   {top: 0em; background: rgba(0, 0, 122, 0.5); width: 5%;}
-        100% {top: 7em; background: rgba(255, 255, 255, 0.5); width: 100%;}
+        0%   {top: 0; background: rgba(0, 0, 122, 0.5); width: 5%;}
+        100% {top: 70%; background: rgba(255, 255, 255, 0.5); width: 100%;}
     }
     
     @keyframes width {
-        0%   {top: 0em; background: rgba(0, 0, 122, 0.5); width: 5%;}
-        100% {top: 7em; background: rgb(255, 255, 255, 0.5); width: 100%;}
+        0%   {top: 0; background: rgba(0, 0, 122, 0.5); width: 5%;}
+        100% {top: 70%; background: rgb(255, 255, 255, 0.5); width: 100%;}
     }
 
     footer {
@@ -266,13 +266,13 @@
     }
 
     @-webkit-keyframes width {
-        0%   {top: 0em; background: rgba(0, 0, 122, 0.5); width: 5%;}
-        100% {top: 6em; background: rgba(255, 255, 255, 0.5); width: 100%;}
+        0%   {top: 0; background: rgba(0, 0, 122, 0.5); width: 5%;}
+        100% {top: 60%; background: rgba(255, 255, 255, 0.5); width: 100%;}
     }
     
     @keyframes width {
-        0%   {top: 0em; background: rgba(0, 0, 122, 0.5); width: 5%;}
-        100% {top: 6em; background: rgb(255, 255, 255, 0.5); width: 100%;}
+        0%   {top: 0; background: rgba(0, 0, 122, 0.5); width: 5%;}
+        100% {top: 60%; background: rgb(255, 255, 255, 0.5); width: 100%;}
     }
 
     footer {

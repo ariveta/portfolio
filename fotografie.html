@@ -80,7 +80,7 @@
 		</ol>
     </nav>
     <section id="header-gallery"></section>
-	<section id="zdjecia-produktowe">
+	<section id="fotografie1">
         <h2>Zdjęcia produktowe</h2>
 		<div class="slideshow">
 			<div class="left">
@@ -112,7 +112,7 @@
 			</a>
 		</div>
     </section>
-	<section id="zdjecia-portrety">
+	<section id="fotografie2">
         <h2>Portrety</h2>
 		<div class="slideshow">
 			<div class="left">
@@ -135,7 +135,7 @@
 			</a>
 		</div>
     </section>
-	<section id="sesje-zdjeciowe">
+	<section id="fotografie3">
         <h2>Sesje zdjęciowe</h2>
 		<div class="slideshow">
 			<div class="left">
@@ -167,7 +167,7 @@
 			</a>
 		</div>
     </section>
-	<section id="zdjecia-stockowe">
+	<section id="fotografie4">
         <h2>Zdjęcia stockowe</h2>
 		<div class="slideshow">
 			<div class="left">
@@ -296,7 +296,30 @@
 					i=1;
 					document.getElementById('stockowe').src='img/fotografie/stockowe/'+i+'.jpg';
 				}
-            }
+            }else
+			if(window.innerWidth < 1000)
+			{
+				if(n==1)
+				{
+					document.getElementById('fotografie1').style="display: none";
+					document.getElementById('fotografie2').style="display: block";
+				}else
+				if(n==2)
+				{
+					document.getElementById('fotografie2').style="display: none";
+					document.getElementById('fotografie3').style="display: block";
+				}else
+				if(n==3)
+				{
+					document.getElementById('fotografie3').style="display: none";
+					document.getElementById('fotografie4').style="display: block";
+				}else
+				if(n==4)
+				{
+					document.getElementById('fotografie4').style="display: none";
+					document.getElementById('fotografie1').style="display: block";
+				}
+			}
 		}
 
 		function left(n) {
@@ -338,7 +361,30 @@
 					i=9;
 					document.getElementById('stockowe').src='img/fotografie/stockowe/'+i+'.jpg';
 				}
-            }
+            }else
+			if(window.innerWidth < 1000)
+			{
+				if(n==1)
+				{
+					document.getElementById('fotografie1').style="display: none";
+					document.getElementById('fotografie4').style="display: block";
+				}else
+				if(n==2)
+				{
+					document.getElementById('fotografie2').style="display: none";
+					document.getElementById('fotografie1').style="display: block";
+				}else
+				if(n==3)
+				{
+					document.getElementById('fotografie3').style="display: none";
+					document.getElementById('fotografie2').style="display: block";
+				}else
+				if(n==4)
+				{
+					document.getElementById('fotografie4').style="display: none";
+					document.getElementById('fotografie3').style="display: block";
+				}
+			}
 		}
 
 		function slide_produktowe(n) {

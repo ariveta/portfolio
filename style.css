@@ -138,7 +138,7 @@
     }
 
     .left img {
-        height: 10vh;
+        height: 7vh;
         border-radius: 100%;
         background-color: rgba(0, 0, 0, 0.1);
     }
@@ -160,7 +160,7 @@
     }
 
     .right img {
-        height: 10vh;
+        height: 7vh;
         float: right;
         border-radius: 100%;
         background-color: rgba(0, 0, 0, 0.1);

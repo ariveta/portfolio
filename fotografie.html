@@ -97,24 +97,12 @@
 			</div>
 		</div>
 			<div class="show-box">
-				<a href="fotografie.html#slideshow">
-					<img class="show" src="img/fotografie/produktowe/1.jpg" onclick="slideshow(1)">
-				</a>
-				<a href="fotografie.html#slideshow">
-					<img class="show" src="img/fotografie/produktowe/2.jpg" onclick="slideshow(2)">
-				</a>
-				<a href="fotografie.html#slideshow">
-					<img class="show" src="img/fotografie/produktowe/3.jpg" onclick="slideshow(3)">
-				</a>
-				<a href="fotografie.html#slideshow">
-					<img class="show" src="img/fotografie/produktowe/4.jpg" onclick="slideshow(4)">
-				</a>
-				<a href="fotografie.html#slideshow">
-					<img class="show" src="img/fotografie/produktowe/5.jpg" onclick="slideshow(5)">
-				</a>
-				<a href="fotografie.html#slideshow">
-					<img class="show" src="img/fotografie/produktowe/6.jpg" onclick="slideshow(6)">
-				</a>
+				<img class="show" src="img/fotografie/produktowe/1.jpg" onclick="slideshow(1)">
+				<img class="show" src="img/fotografie/produktowe/2.jpg" onclick="slideshow(2)">
+				<img class="show" src="img/fotografie/produktowe/3.jpg" onclick="slideshow(3)">
+				<img class="show" src="img/fotografie/produktowe/4.jpg" onclick="slideshow(4)">
+				<img class="show" src="img/fotografie/produktowe/5.jpg" onclick="slideshow(5)">
+				<img class="show" src="img/fotografie/produktowe/6.jpg" onclick="slideshow(6)">
 			</div>
     </section>
     <section id="kontakt">
@@ -191,7 +179,10 @@
 		}
 
 		function slideshow(n) {
-			document.getElementById('slide').src='img/fotografie/produktowe/'+n+'.jpg';
+			if(window.innerWidth > 999)
+            {
+				document.getElementById('slide').src='img/fotografie/produktowe/'+n+'.jpg';
+			}
 		}
 	</script>
 </body>

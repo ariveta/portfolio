@@ -316,6 +316,10 @@
     box-sizing: border-box;
 }
 
+html, body {
+    scroll-behavior: smooth;
+}
+
 nav {
     width: 100%;
     position: fixed;
